@@ -18,22 +18,27 @@
 body {
   background-color: var(--backgound-color);
 }
-.page {
-  /* margin: 0 8rem; */
 
-  height: 100dvh;
-  /* border-bottom: 1px solid black; */
+.s1 {
   position: relative;
+  height: 200dvh;
 }
-
-.long {
+.s2 {
+  position: relative;
+  height: 3100px;
+}
+.s3 {
+  position: relative;
   height: 230dvh;
 }
-.grid2 {
-  display: gird;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
+.s4 {
+  position: relative;
 }
+.s5 {
+  height: 100dvh;
+  width: 100%;
+}
+
 .nav-wrap {
   position: relative;
   position: sticky;
@@ -154,12 +159,39 @@ footer div {
   /* 얼마나 스티키 될지 계산 */
   position: relative;
 }
-.s2 {
-  height: 3100px;
-}
+
 .card-drop {
   position: sticky;
   width: 100%;
   top: 100px;
   /* 위에서 얼마나 떨어질지 계산 */
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  height: 800px;
+  margin: 20px 0;
+}
+.grid-1 {
+  background-color: var(--gray);
+}
+
+.grid-2 {
+  background-color: var(--navy);
+}
+
+.grid2 {
+  margin: 10px 8rem 130px 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.s5 h1 {
+  margin-top: 200px;
+  color: var(--navy);
+}
+.grid2 div {
+  height: 150px;
+  outline: 1px solid black;
 }

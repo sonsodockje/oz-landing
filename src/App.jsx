@@ -26,14 +26,12 @@ function App() {
               <li>
                 <a href="#">메뉴삼</a>
               </li>
-              <li>
-                <a href="#">메뉴사</a>
-              </li>
             </ul>
           </div>
         </nav>
       </div>
-      <div className="page" id="1">
+
+      <section className="s1">
         <div className="backgound-text">
           이것은 예쁜
           <br />
@@ -41,8 +39,9 @@ function App() {
           <br />
           텍스트 이다.
         </div>
-      </div>
-      <div className="page s2" id="2">
+      </section>
+
+      <section className="s2">
         <div className="card-stop-area">
           <div className="card-drop">
             <div className="card-secion">
@@ -76,10 +75,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div>더 해라</div>
-      </div>
+      </section>
 
-      <div className="page long" id="3">
+      <section className="s3">
         <div className="drop-stop-area">
           <div className="drop">
             <div className="drop-content">
@@ -87,10 +85,27 @@ function App() {
             </div>
           </div>
         </div>
+      </section>
+
+      <div className="s4">
+        <div className="grid">
+          <div className="grid-1">왼</div>
+          <div className="grid-2">오</div>
+        </div>
       </div>
-      <div className="page" id="4">
-        4
+
+      <div className="s5">
+        <h1>제목입니다.</h1>
+        <div className="grid2">
+          <div>gird</div>
+          <div>gird</div>
+          <div>gird</div>
+          <div>gird</div>
+          <div>gird</div>
+          <div>gird</div>
+        </div>
       </div>
+
       <footer>
         <div>푸터이다.</div>
       </footer>
