@@ -1,0 +1,165 @@
+:root {
+  --basic-margin: 0 8rem;
+  --backgound-color: #fffbfb;
+  --gray: #c2ced4;
+  --navy: #000762;
+  --point-1: #1cd758;
+  --point-2: #ee170f;
+  --point-3: #3c2dd1;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--backgound-color);
+}
+.page {
+  /* margin: 0 8rem; */
+
+  height: 100dvh;
+  /* border-bottom: 1px solid black; */
+  position: relative;
+}
+
+.long {
+  height: 230dvh;
+}
+.grid2 {
+  display: gird;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.nav-wrap {
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: var(--navy);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 20px 0;
+  margin: 0 4rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem;
+  color: var(--backgound-color);
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+li {
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: var(--backgound-color);
+}
+a:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 0;
+  left: -10%;
+  bottom: 0px;
+  display: inline-block;
+  background-color: var(--point-2);
+}
+a:hover:after {
+  width: 120%;
+  transition: all 0.3s;
+}
+.drop-stop-area {
+  margin: var(--basic-margin);
+  height: 1700px;
+  /* 얼마나 스티키 될지 계산 */
+  background-color: #f4f4f4;
+  position: relative;
+}
+.drop {
+  background-color: #1cd7571a;
+  position: sticky;
+  width: 100%;
+  top: 250px;
+  /* 위에서 얼마나 떨어질지 계산 */
+}
+.drop-content {
+  background-color: var(--point-1);
+  position: absolute;
+  padding: 10rem;
+}
+.backgound-text {
+  margin: var(--basic-margin);
+  position: absolute;
+  left: -200px;
+  top: 100px;
+  font-size: 256px;
+  line-height: 220px;
+  opacity: 4%;
+  z-index: -99;
+  text-wrap: nowrap;
+}
+.card-secion {
+  background-color: var(--navy);
+  padding-bottom: 100px;
+}
+h1 {
+  padding: 50px 0;
+  text-align: center;
+  color: var(--backgound-color);
+}
+.card-wrap {
+  display: flex;
+  margin: var(--basic-margin);
+  justify-content: space-between;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+.card h4 {
+  padding: 20px 0;
+}
+footer {
+  background-color: var(--navy);
+
+  color: var(--backgound-color);
+}
+footer div {
+  margin: var(--basic-margin);
+  padding: 150px 0;
+}
+.card-stop-area {
+  height: 3000px;
+  /* 얼마나 스티키 될지 계산 */
+  position: relative;
+}
+.s2 {
+  height: 3100px;
+}
+.card-drop {
+  position: sticky;
+  width: 100%;
+  top: 100px;
+  /* 위에서 얼마나 떨어질지 계산 */
+}
